@@ -25,17 +25,52 @@ h1 {
 }
 
 img {
-  width: 50%;
+  width: 100%;
 }
 
 .emoji {
   width: 10px;
 }
 
-.footer {
+.container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.titleBox {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: orange;
+  padding: 15px;
+}
+
+.articleBox {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: pink;
+  padding: 15px;
+}
+
+.articleSectionBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.articleSection {
+  width: 40%;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageContainer {
+  width: 50%;
 }
 
 .footerBox {
@@ -46,4 +81,17 @@ img {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  .articleSection {
+    width: 100%;
+  }
+  .imageContainer {
+    width: 50%;
+    margin-right: auto;
+  }
 }
