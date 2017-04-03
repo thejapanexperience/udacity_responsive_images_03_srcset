@@ -1,3 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 /*
 
 Your styles go here!
@@ -48,9 +55,10 @@ figure {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: url(../images_src/background/background.png);
-  background-size: cover;
-  padding: 16px;
+  /*background-image: url(../images_src/background/background.png);
+  background-size: cover;*/
+  background-color: orange;
+  padding: 15px;
 }
 
 .articleBox {
@@ -77,6 +85,28 @@ figure {
 
 .imageContainer {
   width: 50%;
+  min-height: 200px;
+}
+
+#one {
+  background-image: url(../images_src/background/background4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#two {
+  background-image: url(../images_src/medium/horses.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#three {
+  background-image: url(../images_src/largeCompressed/cockatoos.jpg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 .footerBox {
@@ -93,11 +123,17 @@ figure {
   .container {
     width: 100%;
   }
+  .titleBox {
+    width: 100%;
+  }
+  .articleBox {
+    width: 100%;
+  }
   .articleSection {
     width: 100%;
   }
   .imageContainer {
-    width: 50%;
+    width: 100%;
     margin-right: auto;
   }
 }
