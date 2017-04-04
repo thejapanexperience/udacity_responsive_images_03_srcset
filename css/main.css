@@ -69,6 +69,7 @@ figure {
   margin-right: auto;
   background-color: pink;
   padding: 15px;
+  border-bottom: 1px solid black;
 }
 
 .articleSectionBox {
@@ -88,6 +89,7 @@ figure {
 .imageContainer {
   width: 50%;
   min-height: 200px;
+  transition: width 2s, height 2s, background-color 2s;
 }
 
 #one {
@@ -95,6 +97,8 @@ figure {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;*/
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 #two {
@@ -114,6 +118,8 @@ figure {
 .footerBox {
   background-color: yellow;
   text-align: center;
+  min-height: 100px;
+  width: 100%;
 }
 .footerImage {
   width: 50%;
